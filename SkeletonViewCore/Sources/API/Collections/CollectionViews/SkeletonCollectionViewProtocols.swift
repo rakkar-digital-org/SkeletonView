@@ -8,6 +8,7 @@
 
 import UIKit
 
+@MainActor
 public protocol SkeletonCollectionViewDataSource: UICollectionViewDataSource {
     func numSections(in collectionSkeletonView: UICollectionView) -> Int
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int

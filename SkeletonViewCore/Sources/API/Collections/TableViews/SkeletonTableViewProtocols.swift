@@ -50,7 +50,6 @@ public protocol SkeletonTableViewDelegate: UITableViewDelegate {
     func collectionSkeletonView(_ skeletonView: UITableView, identifierForFooterInSection section: Int) -> ReusableHeaderFooterIdentifier?
 }
 
-@MainActor
 public extension SkeletonTableViewDelegate {
     func collectionSkeletonView(_ skeletonView: UITableView, identifierForHeaderInSection section: Int) -> ReusableHeaderFooterIdentifier? {
         return nil
