@@ -19,6 +19,7 @@ public protocol SkeletonCollectionViewDataSource: UICollectionViewDataSource {
     func collectionSkeletonView(_ skeletonView: UICollectionView, prepareViewForSkeleton view: UICollectionReusableView, at indexPath: IndexPath)
 }
 
+@MainActor
 public extension SkeletonCollectionViewDataSource {
     func collectionSkeletonView(_ skeletonView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         UICollectionView.automaticNumberOfSkeletonItems
